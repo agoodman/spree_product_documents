@@ -22,7 +22,7 @@ class Admin::DocsController < Spree::Admin::ResourceController
   end
 
   def load_data
-    @product = Product.find_by_permalink(params[:product_id])
+    @product = Spree::Product.find_by_permalink(params[:product_id])
   end
 
   def set_viewable
