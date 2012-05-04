@@ -1,4 +1,4 @@
-module Admin::DocsHelper
+module Spree::Admin::DocsHelper
   def get_doc_icon(doc)
     word_icon = 'word_icon.png'
     excel_icon = 'excel_icon.png'
