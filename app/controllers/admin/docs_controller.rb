@@ -1,4 +1,4 @@
-class Admin::DocsController < Admin::ResourceController
+class Admin::DocsController < Spree::Admin::ResourceController
   before_filter :load_data
 	
   create.before :set_viewable
