@@ -47,4 +47,8 @@ class Admin::DocsController < Spree::Admin::ResourceController
     @viewable = object.viewable
   end
 
+  def model_class
+    Doc
+  end
+
 end
