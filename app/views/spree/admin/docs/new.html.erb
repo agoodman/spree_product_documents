@@ -8,15 +8,3 @@
     <%= t('or') %> <%= link_to t("cancel"), "#", :id => "cancel_link" %>
   </p>
 <% end %>
-
-
-<script type="text/javascript">    
-  jQuery('#cancel_link').click(function (event) { 
-    jQuery('#new_doc_link').show();
-    jQuery('#docs').html('');
-  });  
- 
-</script>
-
- 
- 
