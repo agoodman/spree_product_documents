@@ -1,4 +1,6 @@
-class Admin::DocsController < Spree::Admin::ResourceController
+module Spree
+module Admin
+class DocsController < ResourceController
   before_filter :load_data
 	
   create.before :set_viewable
@@ -22,7 +24,7 @@ class Admin::DocsController < Spree::Admin::ResourceController
   end
 
   def load_data
-    @product = Spree::Product.find_by_permalink(params[:product_id])
+    @product = Product.find_by_permalink(params[:product_id])
   end
 
   def set_viewable
@@ -51,4 +53,6 @@ class Admin::DocsController < Spree::Admin::ResourceController
     Doc
   end
 
+end
+end
 end

@@ -1,4 +1,4 @@
-class Doc < Spree::Asset
+class Spree::Doc < Spree::Asset
   validate :no_attachment_errors
   has_attached_file :attachment,
                     :url => "/assets/products/:id/:style/:basename.:extension",
